@@ -21,6 +21,8 @@ ids = []
 for fid in Cursor(api.followers_ids, screen_name=screen_name, count=5000).items():
     ids.append(fid)
 
+# print(ids)
+
 # Get more details for each follower
 info = []
 for i in range(0, len(ids), 100):
@@ -33,7 +35,7 @@ for i in range(0, len(ids), 100):
         print('Something went wrong, skipping...')
 
 # Process data to usable csv file format
-import pandas as pandas
+import pandas as pd
 
 data = [x._json for x in info]
 df = pd.DataFrame(data)
