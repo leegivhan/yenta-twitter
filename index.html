@@ -1,25 +1,27 @@
   <!DOCTYPE html>
   <html lang="en">
+    <div class="header">
       <head>
-          <meta charset="UTF-8">
+          <!-- <meta charset="UTF-8">
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Document</title>
           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
+          -->
+          <link rel="stylesheet" type="text/css" href="styles.css">
           <title>Who do your followers follow?</title>
         </head>
+    </div>
         <body>
           <!-- <h1>YENTA</h1> -->
       </head>
       <body>
-          <h1>Who do your followers follow?</h1>
+          <h1 class="followers">Who do your followers follow?</h1>
           <h3>If all of your Twitter followers were combined into one person, what would that persons top 10 interests be?</h3>
-          <form>
-            Enter your Twitter username and let's find out:
-              <!-- <br> -->
-                <input type="text"name="Twitter username">
-              <br>
+          <form id="myform" action="JavaScript:myFunctionName()">
+            Enter your Twitter username and let's find out:<br>
+                <input type="text" id="Twitter username">
+                <input type="submit" value="Submit"><br>
           </form>
           <ol>
             <h4>Here are your followers top 10 interests:</h4>
@@ -36,6 +38,3 @@
           </ol>
       </body>
   </html>
-
-
-  <!-- file:///Users/instrument/coding-projects/yenta-twitter/index.html -->
